@@ -34,7 +34,7 @@ Node& Node::operator=(char d)
     else
     {
         IllegalCharException e;
-        ex.setInput(data);
+        e.setInput(data);
         throw e;
     }
     return *this;
