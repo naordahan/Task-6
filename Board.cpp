@@ -48,7 +48,7 @@ Node& Board::operator[](list<int> list)
     {
        IllegalCoordinateException ex;
         ex.setX(x); ex.setY(y);
-        throw e;
+        throw ee;
     }   
     return board[x][y];
 }
