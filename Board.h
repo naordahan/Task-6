@@ -9,7 +9,7 @@ class Board
 {
     public:
     int size;
-    Node ** game;
+    //Node ** game;
     Node **board;
     Board(int s);
     Board(const Board& o);
