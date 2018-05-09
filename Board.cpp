@@ -46,8 +46,8 @@ Node& Board::operator[](list<int> list)
     int y= list.back();
     if(x<0 || x>=size|| x<0 || x>=size)
     {
-        Board::IllegalCoordinateException e;
-        e.setX(x); e.setY(y);
+       IllegalCoordinateException ex;
+        ex.setX(x); ex.setY(y);
         throw e;
     }   
     return board[x][y];
