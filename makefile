@@ -1,7 +1,7 @@
 CXX=clang++-5.0
 CXXFLAGS=-std=c++17 
 
-all: Board.o Node.o
+all: Board.o Node.o main.o
 
 Board.o: Board.cpp Board.h 
 	$(CXX) $(CXXFLAGS) -c Board.cpp -o Board.o
