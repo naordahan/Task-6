@@ -3,7 +3,7 @@
 Board::Board(int s)
 {
     this->size=s;
-   this->game = new Node*[size];
+    this->game = new Node*[size];
     for (int i = 0; i < size; i++) {
 		this->board[i] = new Node [size];
 	}
@@ -102,7 +102,7 @@ Board& Board::operator=(char c)
 //operator ==
 bool Board::operator==(const Board &o) const
 {
-    if (rows != o.size)
+    if (size != o.size)
         return false;
     for (int i = 0; i < size; ++i) {
         for (int j = 0; j < size; ++j) {
@@ -118,7 +118,7 @@ ostream &operator<<(ostream& o, const Board& b)
     for (int i = 0; i < b.size; i++)
     {
         for (int j = 0; j < b.size; j++){
-            out << b.board[i][j].getNode();
+            o << b.board[i][j].getNode();
         }
         o << endl;
     }
