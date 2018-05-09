@@ -20,7 +20,3 @@ clean:
 	rm *.o a.out
 
 
-
-buildAndRun: all main.o
-	$(CXX) $(CXXFLAGS) Board.o Node.o main.o
-	./a.out
