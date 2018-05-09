@@ -54,6 +54,6 @@ bool Node::operator!=(char c) const {
     return data != c;
 }
 
-bool Node::operator!=(const Node& n) const {
+bool Node::operator!=(const Node& o) const {
     return data!= o.data;
 }
