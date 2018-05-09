@@ -11,7 +11,7 @@ Node.o: Node.cpp Node.h
 	$(CXX) $(CXXFLAGS) -c Node.cpp -o Node.o
 
 
-buildAndRun: all main.o
+buildAndRun: all 
 	$(CXX) $(CXXFLAGS) Board.o Node.o main.o
 	./a.out
 
