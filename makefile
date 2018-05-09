@@ -12,9 +12,6 @@ Node.o: Node.cpp Node.h
 
 
 
-main.o: main.cpp Board.h 
-	$(CXX) $(CXXFLAGS) -c main.cpp -o main.o
-
 
 clean:
 	rm *.o a.out
