@@ -3,7 +3,7 @@
 Board::Board(int s)
 {
     this->size=s;
-    this->game = new Node*[size];
+    this->board = new Node*[size];
     for (int i = 0; i < size; i++) {
 		this->board[i] = new Node [size];
 	}
