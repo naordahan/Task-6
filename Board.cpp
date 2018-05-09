@@ -65,7 +65,7 @@ Board& Board::operator=(const Board &b)
         delete [] board;
 
         size = b.size;
-        board = new Node*[b.board]; 
+        board = new Node*[b.size]; 
         for (int i = 0; i < size; i++) {
 		board[i] = new Node [size];
 	    }
