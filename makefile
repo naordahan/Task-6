@@ -10,8 +10,7 @@ Board.o: Board.cpp Board.h
 Node.o: Node.cpp Node.h 
 	$(CXX) $(CXXFLAGS) -c Node.cpp -o Node.o
 
-main.o: main.cpp Board.h 
-	$(CXX) $(CXXFLAGS) -c main.cpp -o main.o
+
 
 
 
